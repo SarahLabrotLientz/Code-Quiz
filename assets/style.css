@@ -3,7 +3,7 @@
 
 
 :root {
-    background-image: url(/assets/background.jpg);
+    background-image: url(/images/background.jpg);
 }
 
 * {
@@ -100,11 +100,7 @@ h2 {
 
 /* End Page CSS */
 
-.btn {
-    color: white;
 
-}
-   
 .end-form-container {
     width: 100%;
     display: flex;
@@ -148,6 +144,42 @@ input::placeholder {
     color: rgb(255, 234, 234)
 }
 
+
+/* Heads up Display */
+#hud {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hud-prefix {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.hud-main-text {
+    text-align: center;
+}
+
+#progressBar {
+    width: 20rem;
+    height: 3rem;
+    border: 0.2rem solid rgb(11,223,36);
+    margin-top: 2rem;
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+#progressBarFull {
+    height: 100%;
+    background: rgb(11,223,36);
+    width: 0%;
+}
+
+@media screen and (max-width: 768px) {
+    .choice-container {
+        min-width: 40rem;
+    }
+}
 
 /* Game Page CSS */
 
@@ -232,8 +264,7 @@ h4 {
 }
 
 /* Highscore Page CSS */
-
-   
+ 
 body {
     color: #fff;
 }
@@ -246,4 +277,4 @@ body {
 .high-score {
     font-size: 2.8rem;
     margin-bottom: 0.5rem;
-}
+} 
