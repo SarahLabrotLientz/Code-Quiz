@@ -3,7 +3,7 @@
 
 
 :root {
-    background-color: rgb(29, 26,26)
+    background-image: url(/assets/background.jpg);
 }
 
 * {
@@ -67,7 +67,7 @@ h2 {
     text-align: center;
     margin-bottom: 1rem;
     text-decoration: none;
-    color: rgb(28, 26,26);
+    color: rgb(23, 1, 41);
     background: linear-gradient(90deg, rgb(18,92,255) 0%, rgb(0, 102, 255) 100%);
     border-radius: 4px;
 }
@@ -99,6 +99,12 @@ h2 {
 }
 
 /* End Page CSS */
+
+.btn {
+    color: white;
+
+}
+   
 .end-form-container {
     width: 100%;
     display: flex;
@@ -139,7 +145,7 @@ input::placeholder {
 .fa-home {
     margin-left: 1rem;
     font-size: 2rem;
-    color: rgb(28, 26, 26)
+    color: rgb(255, 234, 234)
 }
 
 
@@ -182,6 +188,11 @@ body {
 
 .incorrect {
     background: linear-gradient(32deg, rgba(230, 29, 29, 1) 0%, rgb(224, 11, 11, 1) 100%);
+}
+
+h4 {
+    font-size: 3rem;
+    margin-top: 0.8rem;
 }
 
 /* Heads up Display */
