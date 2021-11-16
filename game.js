@@ -48,21 +48,34 @@ let questions = [
 
 ]
 
+let timeRemaining = 75;
 const SCORE_POINTS = 100
 const MAX_QUESTIONS = 4
 
 startGame = () => {
     questionCounter = 0
     score = 0
-    availableQuestions = [...questions]
+    availableQuestions = [...questions];
     getNewQuestion()
+    timerStarts()
+}
+
+timerStarts = () => {
+    let quizInterval = setInterval(function () {
+        timeRemaining--;
+        document.getElementById("timer").textContent = timeRemaining;
+
+        if(timeRemaining <= 0){
+            return window.location.assign('./end.html')
+        }
+    }, 1000)
 }
 
 getNewQuestion = () => {
     if(availableQuestions.length === 0 || questionCounter > MAX_QUESTIONS) {
         localStorage.setItem('mostRecentScore', score)
 
-        return window.location.assign('/end.html')
+        return window.location.assign('./end.html')
     }
 
     questionCounter++
