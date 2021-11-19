@@ -108,7 +108,14 @@ choices.forEach(choice => {
 
         if(classToApply === 'correct') {
             incrementScore(SCORE_POINTS)
+        } 
+
+        // timer reduction
+        else{classToApply === 'incorrect'
+            timeRemaining += -15
+
         }
+       
 
         selectedChoice.parentElement.classList.add(classToApply)
 
@@ -124,5 +131,9 @@ incrementScore = num => {
     score +=num
     scoreText.innerText = score
 }
+
+    
+
+
 
 startGame()
